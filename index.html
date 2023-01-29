@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Répertoire</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="globale">
+            <h1>Orientation pour la classe de première.</h1>
+            <div>
+                <p>
+                    Je compte m'inscrire en première 
+                    <select id="selectVoie">
+                        <option value="">~~ choisir une voie ~~</option>
+                        <option value="generale">générale</option>
+                        <option value="technologique">technologique</option>
+                    </select>
+                </p>
+                <p id="technologique" style="display: none;">
+                    Je souhaite suivre la filière
+                    <select id="selectFiliere">
+                        <option value="">~~ choisir une filière ~~</option>
+                        <option value="STL">STL</option>
+                        <option value="STAV">STAV</option>
+                        <option value="STHR">STHR</option>
+                        <option value="STD2A">STD2A</option>
+                        <option value="STI2D">STI2D</option>
+                        <option value="ST2S">ST2S</option>
+                        <option value="STMG">STMG</option>
+                        <option value="S2TMD">S2TMD</option>
+                    </select>
+                </p>
+            </div>
+            <div id="STL" style="display: none;">
+                <h2>Sciences et Technologies de Laboratoire</h2>
+                <p>Le bac STL convient tout particulièrement aux élèves qui ont un goût affirmé pour les sciences du vivant, les manipulations et la démarche expérimentale en laboratoire.</p>
+                <h3>Enseignement spécifique : Sciences Physiques et Chimiques en Laboratoire</h3>
+                <p>Etablissement proche : Lycée René Char à Avignon</p>
+                <h3>Enseignement spécifique : Biochimie, Biologie, Biotechnique</h3>
+                <p>Etablissements proches : Lycées René Char et Louis Pasteur à Avignon</p>
+            </div>
+            <div id="STAV" style="display: none;">
+                <h2>Sciences et Technologies de l'Agronomie et du Vivant</h2>
+                <p>Préparé dans les lycées agricoles, le bac STAV s'adresse aux élèves intéressés par l'agriculture, mais aussi par l'aménagement des espaces, la protection des milieux naturels et l'agroalimentaire.</p>
+                <p>Etablissements proches :</p>
+                <ul>
+                    <li>Lycée Louis Giraud à Carpentras</li>
+                    <li>Lycée François Pétrarque à Avignon</li>
+                    <li>Lycée les Chênes à Carpentras</li>
+                </ul>
+            </div>
+            <div id="STHR" style="display: none;">
+                <h2>Sciences et Technologies de l'Hôtellerie et de la Restauration</h2>
+                <p>Le bac STHR réunit les élèves attirés par les métiers de l'hôtellerie et de la restauration. Les enseignements se répartissent en trois pôles : gestion hôtelière, restauration et services.</p>
+                <p>Etablissement proche : Ecole hôtelière d'Avignon (CCI du Vaucluse)</p>
+            </div>
+            <div id="STD2A" style="display: none;">
+                <h2>Sciences et Technologies du Design et des Arts Appliqués</h2>
+                <p>Le bac STD2A attire les élèves désireux d'exercer dans les secteurs du design graphique, du design d'espace, du design de mode, du design de produits et des métiers d'arts.</p>
+                <p>Etablissements proches : Lycées Saint-Joseph et Frédéric Mistral à Avignon</p>
+            </div>
+            <div id="STI2D" style="display: none;">
+                <h2>Sciences et Technologies de l'Industrie et du Développement Durable.</h2>
+                <p>Le bac STI2D s'adresse aux lycéens qui s'interessent à l'innovation technologique dans le respect de l'environnement et se montrent sensibles à une approche concrète de l’enseignement de sciences.</p>
+                <h3>Enseignement spécifique : Architecture et Construction</h3>
+                <p>Etablissement proche : Campus des sciences Philippe de Girard à Avignon</p>
+                <h3>Enseignement spécifique : Innovation Technologique et Eco-Conception</h3>
+                <p>Etablissements proches :</p>
+                <ul>
+                    <li>Campus des sciences Philippe de Girard à Avignon</li>
+                    <li>Lycée Alphonse Benoit à L'Isle-sur-la-Sorgue</li>
+                    <li>Lycée Jean-Henri Fabre à Carpentras</li>
+                </ul>
+                <h3>Enseignement spécifique : Energie et Environnement</h3>
+                <p>Etablissements proches :</p>
+                <ul>
+                    <li>Campus des sciences Philippe de Girard à Avignon</li>
+                    <li>Lycée La Salle à Avignon</li>
+                    <li>Lycée Alphonse Benoit à L'Isle-sur-la-Sorgue</li>
+                    <li>Lycée Jean-Henri Fabre à Carpentras</li>
+                </ul>
+                <h3>Enseignement spécifique : Système d'Information Numérique</h3>
+                <p>Etablissements proches :</p>
+                <ul>
+                    <li>Campus des sciences Philippe de Girard à Avignon</li>
+                    <li>Lycée La Salle à Avignon</li>
+                    <li>Lycée Alphonse Benoit à L'Isle-sur-la-Sorgue</li>
+                    <li>Lycée Jean-Henri Fabre à Carpentras</li>
+                </ul>
+            </div>
+            <div id="ST2S" style="display: none;">
+                <h2>Sciences et Technologies de la Santé et du Social</h2>
+                <p>Sciences et techniques sanitaires et sociales, biologie et physiopathologie, sciences physiques et chimiques... Le bac ST2S accueille les élèves souhaitant s'insérer dans les secteurs du social et du paramédical.</p>
+                <p>Etablissements proches :</p>
+                <ul>
+                    <li>Campus des sciences Philippe de Girard à Avignon</li>
+                    <li>Lycée Saint-Joseph à Avignon</li>
+                    <li>Lycée Louis Pasteur à Avignon</li>
+                    <li>Lycée Victor Hugo à Carpentras</li>
+                </ul>
+            </div>
+            <div id="STMG" style="display: none;">
+                <h2>Sciences et Technologies du Management et de la Gestion</h2>
+                <p>
+                    Forts de leurs connaissances en management, sciences de la gestion, mais aussi économie et droit, les bacheliers STMG peuvent envisager des poursuites d'études diversifiées.
+                </p>
+                <p>Le lycée Ismaël Dauphin propose les enseignements spécifiques :</p>
+                <ul>
+                    <li>Gestion et Finance</li>
+                    <li>Marketing</li>
+                    <li>Ressources Humaines et Communication</li>
+                </ul>
+                <p>Pour l'enseignement spécifique Système d'Information et de Gestion, l'établissement le plus proche est le lycée Théodore Aubanel à Avignon.</p>
+            </div>
+            <div id="S2TMD" style="display: none;">
+                <h2>Sciences et Techniques du Théatre, de la Musique et de la Danse</h2>
+                <p>Un seul établissement dans notre région propose cette filière : le Lycée Masséna à Nice.</p>
+            </div>
+            <div id="generale" style="display: none; text-align: center;">
+                <form>
+                    <h2>Spécialité n°1</h2>
+                    <select id="specialite1"></select>
+                </form>
+                <form style="visibility: hidden">
+                    <h2>Spécialité n°2</h2>
+                    <select id="specialite2"></select>
+                </form>
+                <form style="visibility: hidden">
+                    <h2>Spécialité n°3</h2>
+                    <select id="specialite3"></select>
+                </form>
+                <p style="text-align: left;">Légende :</p>
+                <ul style="text-align: left;">
+                    <li>Anglais MC : Anglais Monde Contemporain</li>
+                    <li>HGGPo : Histoire-Géographie, Géopolitique, Sciences Politiques</li>
+                    <li>Humanité-Littérature-Philo : Humanité, Littérature, Philosophie</li>
+                    <li>LLCE : Langues, Littératures et Civilisations Etrangères </li>
+                    <li>NSI : Numérique et Sciences Informatiques</li>
+                    <li>SES : Sciences Economiques et Sociales</li>
+                    <li>SI : Sciences de l'Ingénieur</li>
+                    <li>SVT : Sciences de la vie et de la Terre</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            Informations tirées des plaquettes « offre de formation » distribuées en janvier 2023 aux élèves.
+            Vous pouvez signaler toute erreur à <a href="mailto:paul.grudzien@ac-aix-marseille.fr">paul.grudzien@ac-aix-marseille.fr</a>.
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

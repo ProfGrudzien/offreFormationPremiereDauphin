@@ -1,0 +1,119 @@
+body {
+    background-color: WhiteSmoke;
+    font-family: sans-serif;
+    padding-top: 30px;
+    font-size: 14pt;
+    cursor: default;
+}
+
+h1 {
+    text-align: center;
+    color: DodgerBlue;
+}
+
+h2, h3 {
+    color: DodgerBlue;
+    font-weight: normal;
+    margin: 0px;
+}
+
+div {
+    margin: 20px auto;
+    width: 100%;
+}
+
+div.globale {
+    display: block;
+    width: max-content;
+    max-width: 850px;
+    margin-bottom: 100px;
+}
+
+form {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 5px 2px gray;
+    width: 225px;
+    margin: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+p.avertissement {
+    color: red;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    display: block;
+    font-size: 16pt;
+    margin: 10px auto;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input[type="text"] {
+    border: 1px solid gray;
+    background-color: white;
+    padding: 3px;
+}
+
+input[type="submit"], input[type="button"] {
+    border: none;
+    background-color: ForestGreen;
+    padding: 0px 20px;
+    font-size: 16pt;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    transform: scale(1.1);
+}
+
+input[type="button"].rouge {
+    background-color: Tomato;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+}
+
+a:visited {
+    color: inherit;
+}
+
+table {
+    display: inline-block;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 16pt;
+    border: 1px solid gray;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 5px 20px;
+    background-color: DodgerBlue;
+    color: white;
+}
